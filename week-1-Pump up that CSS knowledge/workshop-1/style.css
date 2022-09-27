@@ -12,11 +12,12 @@ body {
 }
 
 #left { 
-    width: 200px;
-    height: 400px;
+    width: 180px;
+    height: 380px;
     display: inline-block;
     background-color: #c9c9c9;
     vertical-align: top;
+    padding: 10px;
 }
 
 #content { 
