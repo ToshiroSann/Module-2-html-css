@@ -1,0 +1,18 @@
+* {
+    font-family: myFirstFont;
+    src: url(Fonds/Italianno-Regular.ttf)
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Fonds/Italianno-Regular.ttf);
+}
+
+.titels {
+    font-size: 50px;
+}
+
+figcaption {
+    font-size: 20px;
+}
+
