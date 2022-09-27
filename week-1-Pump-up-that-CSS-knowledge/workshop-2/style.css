@@ -1,6 +1,7 @@
 * {
     font-family: myFirstFont;
-    src: url(Fonds/Italianno-Regular.ttf)
+    src: url(Fonds/Italianno-Regular.ttf);
+    font-size: 30px;
 }
 
 @font-face {
@@ -13,5 +14,34 @@
 }
 
 figcaption {
-    font-size: 20px;
+    font-size: 40px;
+    margin-left: 75%;
+}
+
+
+h1 {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#photo-1 {
+    width: 350px;
+    bottom: 90px;
+    border: 4px solid #000000;
+    display: inline-block;
+    margin-left: 75%;
+    max-width: 300px;
+}
+
+#photo-2 {
+    width: 350px;
+    bottom: 90px;
+    border: 4px solid #000000;
+    display: inline-block;
+    margin-left: 75%;
+    max-width: 300px;
+}
+
+#description {
+    
 }
