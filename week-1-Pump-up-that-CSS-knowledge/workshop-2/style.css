@@ -9,13 +9,19 @@
     src: url(Fonds/Italianno-Regular.ttf);
 }
 
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
 .titels {
     font-size: 50px;
 }
 
 figcaption {
     font-size: 40px;
-    margin-left: 75%;
+    margin-left: 15%;
 }
 
 
@@ -29,7 +35,8 @@ h1 {
     bottom: 90px;
     border: 4px solid #000000;
     display: inline-block;
-    margin-left: 75%;
+    margin-left: 15%;
+    margin-bottom:20px ;
     max-width: 300px;
 }
 
@@ -38,10 +45,50 @@ h1 {
     bottom: 90px;
     border: 4px solid #000000;
     display: inline-block;
-    margin-left: 75%;
+    margin-left: 15%;
+    margin-bottom:20px ;
     max-width: 300px;
 }
 
-#description {
-    
+.flex-item-two-third {
+    height: 400px;
+    padding: 20px;
+    text-align: start;
+}
+
+.container {
+    width: 100%;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+  }
+  
+  .flex-item-one-third {
+    padding: 5px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    flex: 1 1 auto;
+  }
+
+.flex-item-two-third {
+    padding: 5px;
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    flex: 2 1 auto;
+}
+
+.preparing { 
+        padding: 5px;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        flex: 1 1 auto;
 }
