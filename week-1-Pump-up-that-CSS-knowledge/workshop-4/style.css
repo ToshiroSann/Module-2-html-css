@@ -1,0 +1,74 @@
+#container {
+    width: 957px;
+    margin: 0 auto;
+}
+
+div {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+#header {
+    width: 890px;
+    height: 100px;
+}
+
+#sidebar {
+    width: 180px;
+    height: 500px;
+    float: left;
+}
+
+#content {
+    width: 670px;
+    height: 500px;
+    float: left;
+}
+
+#footer {
+    width: 893px;
+    height: 50px;
+    clear: left;
+}
+
+.footer-7 {
+    width: 100px;
+    height: 10px;
+    margin-left: 750px;
+}
+
+img {
+    width: 200px;
+    height: 100px;
+}
+
+.sidebar-1 {
+    width: 140px;
+    height: 40px;
+}
+
+.sidebar-small {
+    width: 45px;
+    height: 50px;
+    
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.sidebar-4 {
+    width: 140px;
+    height: 70px;
+    clear: both
+}
+
+.content-block {
+    width: 100px;
+    height: 100px;
+}
