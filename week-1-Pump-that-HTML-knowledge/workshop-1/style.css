@@ -2,7 +2,7 @@
     width: 985px;
     height: 1000px;
     margin: auto;
-    border: 2px solid black;
+    border: 10px solid black;
 }
 
 .logo {
@@ -16,5 +16,28 @@
     height: 100px;
     display: inline-block;
     font-size: 20px;
+    text-align: center;
+}
+
+#second-balk {
+    width: 985px;
+    height: 20px;
+    border: 1   px solid black;
+    margin: auto;
+    background-color: black;
+}
+
+.photo-area {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#primary-messaging-area {
+    width: 500px;
+    height: 400px;
+    display: inline-block;
     text-align: center;
 }
