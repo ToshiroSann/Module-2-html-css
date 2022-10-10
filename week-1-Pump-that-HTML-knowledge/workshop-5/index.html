@@ -9,58 +9,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="content">
+<body>
     <div id="container">
-    <h1>Velden voor een HTML-formulier</h1>
-    <form action="">
-        <fieldset>
-            <legend><h2>Tekstvelden</h2></legend>
-            <p><label for="voornaam">Voornaam</label> <input type="text" name="Voornaam" id="voornaam"></p>
-            <p><label for="achternaam"> Achternaam</label> <input type="text" name="Achternaam" id="achternaam"> </p>
-            <p><label for="password">Wachtwoord</label><input type="password" name="pwd" id="password"></p>
-        </fieldset>
+        <h1>Velden voor een HTML-formulier</h1>
+        <form action="">
+            <fieldset>
+                <legend>
+                    <h2>Tekstvelden</h2>
+                </legend>
+                <p><label for="voornaam">Voornaam</label> <input type="text" name="Voornaam" id="voornaam"></p>
+                <p><label for="achternaam"> Achternaam</label> <input type="text" name="Achternaam" id="achternaam">
+                </p>
+                <p><label for="password">Wachtwoord</label><input type="password" name="pwd" id="password"></p>
+            </fieldset>
 
-        <fieldset>
-            <legend><h2>Radio Buttons</h2></legend>
-            <p><input type="radio" name="geslacht" value="man" id="man"><label for="man">Man</label></p>
-            <p><input type="radio" name="geslachtl" value="vrouw" id="vrouw"><label for="vrouw">Vrouw</label></p>
-        </fieldset>
+            <fieldset>
+                <legend>
+                    <h2>Radio Buttons</h2>
+                </legend>
+                <p><input type="radio" name="geslacht" value="man" id="man"><label for="man">Man</label></p>
+                <p><input type="radio" name="geslachtl" value="vrouw" id="vrouw"><label for="vrouw">Vrouw</label>
+                </p>
+            </fieldset>
 
-        <fieldset>
-            <legend><h2>Checkbox</h2></legend>
-            <p><input type="checkbox" name="vehicle" id="fiets" value="Fiets"><label for="fiets">heb een fiets</label>
-            </p>
-            <p><input type="checkbox" name="vehicle" id="auto" value="Auto"><label for="auto">heb een auto</label> </p>
-        </fieldset>
-        <fieldset>
-            <legend><h2>DropdownList</h2></legend>
-            <p><select name="Balletdanseressen">
-                    <option value="Martha Graham"> Martha Graham</option>
-                    <option value="Carlotta Grisis">Carlotta Grisis</option>
-                    <option value="Agrippina Vaganova" selected="selected">Agrippina Vaganova</option>
-                    <option value="Natalie Portman">Natalie Portman</option>
-                </select>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend><h2>Textarea</h2></legend>
-            <p><textarea name="opmerkingen" cols="25" rows="7"></textarea></p>
-            <h2>Submit knop</h2>
-            <p><input type="submit" value="Verzenden"></p>
-   
-    </fieldset>
- </form>
-<form action="">
-    <div>
-        <p><input type="text" name="voornaamBericht" id="voornaamBericht" placeholder="Voornaam *"></p>
-        <p><input type="text" name="achternaamBericht" id="achternaamBericht" placeholder="Acheternaam*"></p>
-        <p><input type="text" name="email" id="email" placeholder="E-mailadres*"></p>
-        <p><input type="text" name="website" id="website" placeholder="Website*"></p>
-        <p><input type="text" name="bericht" id="bericht" placeholder="Bericht*"></p>
-        <p><input type="submit" name="verstuur" id="verstuur" value="verstuur"></p>
+            <fieldset>
+                <legend>
+                    <h2>Checkbox</h2>
+                </legend>
+                <p><input type="checkbox" name="vehicle" id="fiets" value="Fiets"><label for="fiets">heb een
+                        fiets</label>
+                </p>
+                <p><input type="checkbox" name="vehicle" id="auto" value="Auto"><label for="auto">heb een
+                        auto</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>DropdownList</h2>
+                </legend>
+                <p><select name="Balletdanseressen">
+                        <option value="Martha Graham"> Martha Graham</option>
+                        <option value="Carlotta Grisis">Carlotta Grisis</option>
+                        <option value="Agrippina Vaganova" selected="selected">Agrippina Vaganova</option>
+                        <option value="Natalie Portman">Natalie Portman</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <h2>Textarea</h2>
+                </legend>
+                <p><textarea name="opmerkingen" cols="25" rows="7"></textarea></p>
+                <h2>Submit knop</h2>
+                <p><input type="submit" value="Verzenden"></p>
+
+            </fieldset>
+        </form>
+
+        <div id="stap-10">
+            <form action="">
+                <div>
+                    <p><input type="text" name="voornaamBericht" id="voornaamBericht" placeholder="Voornaam *"></p>
+                    <p><input type="text" name="achternaamBericht" id="achternaamBericht" placeholder="Achternaam*"></p>
+                    <p><input type="text" name="email" id="email" placeholder="E-mailadres*"></p>
+                    <p><input type="text" name="website" id="website" placeholder="Website*"></p>
+                    <p><input type="text" name="bericht" id="bericht" placeholder="Bericht*"></p>
+                    <p><input type="submit" name="verstuur" id="verstuur" value="verstuur"></p>
+                </div>
+            </form>
+        </div>
     </div>
-</form>
-</div>
 </body>
 
 </html>
