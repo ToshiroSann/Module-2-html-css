@@ -12,20 +12,32 @@
 
 }
 
-#container {
+#overlay {
     position: fixed;
 }
 
-#navbar {
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    height: 20px;
-
-    padding: 20px;
+#header{
+    padding: 12px 25px;
 }
+
+#header, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    padding-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
 
 #elon-musk {
     width: calc 100vw;
@@ -34,12 +46,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    font-size: 70px;
     font-family: myFirstFont;
     color: aliceblue;
 }
 #elon-musk h1 {
     padding-top: 200px;
+    font-size: 70px;
 }
 
 #elon-musk h2 {
