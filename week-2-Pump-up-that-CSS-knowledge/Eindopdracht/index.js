@@ -1,4 +1,4 @@
-$('.stack').click(function () {
+$('.spread').click(function () {
     $(".whiteCard").each(function (e) {
         setTimeout(function () {
             $(".whiteCard").eq(e).attr("class", "whiteCard");
@@ -6,7 +6,7 @@ $('.stack').click(function () {
     });
 });
 
-$('.spread').click(function () {
+$('.stack').click(function () {
     $(".whiteCard").each(function (e) {
         setTimeout(function () {
             $(".whiteCard").eq(e).attr("class", "whiteCard ani" + e);
