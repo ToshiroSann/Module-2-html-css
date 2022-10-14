@@ -48,6 +48,8 @@ a{
     text-align: center;
     font-family: myFirstFont;
     color: aliceblue;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 #elon-musk h1 {
