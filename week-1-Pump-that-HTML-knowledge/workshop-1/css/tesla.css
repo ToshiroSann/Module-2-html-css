@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+}
+
+#overlay {
+    position: fixed;
+}
+
+#header{
+    padding: 12px 25px;
+}
+
+#header, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    padding-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+#Tesla {
+    width: calc 100vw;
+    height: 100vh;
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/Tesla-black-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: myFirstFont;
+    color: aliceblue;
+}
