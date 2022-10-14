@@ -42,7 +42,7 @@ a{
 #elon-musk {
     width: calc 100vw;
     height: 100vh;
-    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1-elon/images/elon-musk.png);
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/elon-musk.png);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -64,7 +64,7 @@ a{
 #first-image {
     width: calc 100vw;
     height: 100vh;
-    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1-elon/images/Tesla-dark.png);
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/Tesla-dark.png);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: myFirstFont;
@@ -81,7 +81,7 @@ a{
 #second-image {
     width: calc 100vw;
     height: 100vh;
-    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1-elon/images/solar-powerwall.jpg);
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/solar-powerwall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: myFirstFont;
@@ -97,7 +97,7 @@ a{
 #third-image {
     width: calc 100vw;
     height: 100vh;
-    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1-elon/images/spacex.jpg);
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/spacex.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: myFirstFont;
@@ -113,7 +113,7 @@ a{
 #fourth-image {
     width: calc 100vw;
     height: 100vh;
-    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1-elon/images/the-boring-company-picture.jpg);
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/the-boring-company-picture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: myFirstFont;
