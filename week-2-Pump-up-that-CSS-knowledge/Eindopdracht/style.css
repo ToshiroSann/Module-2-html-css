@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background-color: rgb(128, 0, 0);
+}
+
+
+h1 {
+    float: right;
+    font-size: 128px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding-right: 500px;
+}
+
+section {
+    clear: right;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 10px auto;
+    padding: 10px 40px;
+    width: 60%;
+}
+
+
+.whiteCard:hover {
+    transform: scale(1.2);
+    margin-top: -100px; 
+    z-index:  20;
+    
+}
+
+.grid {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  
+  .list {
+    height: 652px;
+    position: relative;
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .whiteCard{
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    perspective: 1000;
+    -ms-transform: perspective(1000px);
+    -moz-transform: perspective(1000px);
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    float: left;
+    width: 222px;
+    height: 311px;
+    background-color: #eee;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 30px 0 15px 15px;
+  }
+  .whiteCard:nth-child(5n) {
+    margin-right: 0;
+  }
+  .whiteCard.ani0 {
+    right: 0px;
+    bottom: 0px;
+    z-index: 30;
+  }
+  .whiteCard.ani1 {
+    right: 110px;
+    bottom: 0px;
+    z-index: 29;
+  }
+  .whiteCard.ani2 {
+    right: 180px;
+    bottom: 0px;
+    z-index: 28;
+  }
+  .whiteCard.ani3 {
+    right: 250px;
+    bottom: 0px;
+    z-index: 27;
+  }
+  .whiteCard.ani4 {
+    right: 320px;
+    bottom: 0px;
+    z-index: 26;
+  }
+  .whiteCard.ani5 {
+    right: 390px;
+    bottom: 0;
+    z-index: 25;
+  }
+  .whiteCard.ani6 {
+    right: 460px;
+    bottom: 0;
+    z-index: 24;
+  }
+  .whiteCard.ani7 {
+    right: 530px;
+    bottom: 0;
+    z-index: 23;
+  }
+  .whiteCard.ani8 {
+    right: 600px;
+    bottom: 0;
+    z-index: 22;
+  }
+
+  .whiteCard.ani9 {
+    right: 670px;
+    bottom: 0px;
+    z-index: 21;
+  }
+
+  .whiteCard.ani10{
+    right: 740px;
+    bottom: 0;
+    z-index: 20;
+  }
+
+  .whiteCard.ani11{
+    right: 810px;
+    bottom: 0;
+    z-index: 19;
+  }
+
+  .whiteCard.ani12{
+    right: 880px;
+    bottom: 0;
+    z-index: 18;
+  }
+
+  .whiteCard.ani13 {
+    right: 0px;
+    bottom: 0px;
+    z-index: 29;
+  }
+  .whiteCard.ani14 {
+    right: 110px;
+    bottom: 0px;
+    z-index: 28;
+  }
+  .whiteCard.ani15 {
+    right: 180px;
+    bottom: 0px;
+    z-index: 27;
+  }
+  .whiteCard.ani16 {
+    right: 250px;
+    bottom: 0px;
+    z-index: 26;
+  }
+  .whiteCard.ani17 {
+    right: 320px;
+    bottom: 0;
+    z-index: 25;
+  }
+  .whiteCard.ani18 {
+    right: 390px;
+    bottom: 0;
+    z-index: 24;
+  }
+  .whiteCard.ani19 {
+    right: 460px;
+    bottom: 0;
+    z-index: 23;
+  }
+  .whiteCard.ani20 {
+    right: 530px;
+    bottom: 0;
+    z-index: 22;
+  }
+
+  .whiteCard.ani21 {
+    right: 600px;
+    bottom: 0px;
+    z-index: 21;
+  }
+
+  .whiteCard.ani22{
+    right: 670px;
+    bottom: 0;
+    z-index: 20;
+  }
+
+  .whiteCard.ani23{
+    right: 740px;
+    bottom: 0;
+    z-index: 19;
+  }
+
+  .whiteCard.ani24{
+    right: 810px;
+    bottom: 0;
+    z-index: 18;
+  }
+
+  .whiteCard.ani25{
+    right: 880px;
+    bottom: 0;
+    z-index: 17;
+  }
+
+  .whiteCard.ani26{
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+  }
+
+  .whiteCard.ani27{
+    right: 110px;
+    bottom: 0;
+    z-index: 29;
+  }
+  
+  .whiteCard.ani28{
+    right: 180px;
+    bottom: 0;
+    z-index: 28;
+  }
+
+  .whiteCard.ani29{
+    right: 250px;
+    bottom: 0;
+    z-index: 27;
+  }
+
+  .whiteCard.ani30{
+    right: 320px;
+    bottom: 0;
+    z-index: 26;
+  }
+
+  .whiteCard.ani31{
+    right: 390px;
+    bottom: 0;
+    z-index: 25;
+  }
+
+  .whiteCard.ani32{
+    right: 460px;
+    bottom: 0;
+    z-index: 24;
+  }
+
+  .whiteCard.ani33{
+    right: 530px;
+    bottom: 0;
+    z-index: 23;
+  }
+
+  .whiteCard.ani34{
+    right: 600px;
+    bottom: 0;
+    z-index: 22;
+  }
+
+  .whiteCard.ani35{
+    right: 670px;
+    bottom: 0;
+    z-index: 21;
+  }
+
+  .whiteCard.ani36{
+    right: 740px;
+    bottom: 0;
+    z-index: 20;
+  }
+
+  .whiteCard.ani37{
+    right: 810px;
+    bottom: 0;
+    z-index: 19;
+  }
+
+  .whiteCard.ani38{
+    right: 880px;
+    bottom: 0;
+    z-index: 18;
+  }
+
+  .whiteCard.ani39{
+    right: 0px;
+    bottom: 0;
+    z-index: 30;
+  }
+
+  .whiteCard.ani40{
+    right: 110px;
+    bottom: 0;
+    z-index: 29;
+  }
+
+  .whiteCard.ani41{
+    right: 180px;
+    bottom: 0;
+    z-index: 28;
+  }
+
+  .whiteCard.ani42{
+    right: 250px;
+    bottom: 0;
+    z-index: 27;
+  }
+
+  .whiteCard.ani43{
+    right: 320px;
+    bottom: 0;
+    z-index: 26;
+  }
+
+  .whiteCard.ani44{
+    right: 390px;
+    bottom: 0;
+    z-index: 25;
+  }
+
+  .whiteCard.ani45{
+    right: 460px;
+    bottom: 0;
+    z-index: 24;
+  }
+
+  .whiteCard.ani46{
+    right: 530px;
+    bottom: 0;
+    z-index: 23;
+  }
+
+  .whiteCard.ani47{
+    right: 600px;
+    bottom: 0;
+    z-index: 22;
+  }
+
+  .whiteCard.ani48{
+    right: 670px;
+    bottom: 0;
+    z-index: 21;
+  }
+
+  .whiteCard.ani49{
+    right: 740px;
+    bottom: 0;
+    z-index: 20;
+  }
+
+  .whiteCard.ani50{
+    right: 810px;
+    bottom: 0;
+    z-index: 19;
+  }
+
+  .whiteCard.ani51{
+    right: 880px;
+    bottom: 0;
+    z-index: 18;
+  }
+
+
+.klaverenCard{
+    margin: 0px -40px;
+}
+
+.hartenCard{
+    margin: 0px -40px;
+}
+
+.schoppenCard{
+    margin: 0px -40px;
+}
+
+.ruitenCard{
+    margin: 0px -40px;
+}
+
+.ruiten{
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:-38px;
+    top:-44px;
+}
+
+.schoppen{
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:-38px;
+    top:-44px;
+}
+
+.harten {
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:-38px;
+    top:-44px;
+}
+
+.klaveren {
+    position:absolute; 
+    left:-38px;
+    top:-44px;
+    width: 16px;
+    height: 16px;
+}
+
+.aRuiten{
+    color: red;
+    position:absolute; 
+    left: 4px; 
+    top: -25px;
+}
+
+.aSchoppen{
+    position:absolute; 
+    left: 4px; 
+    top: -25px;
+}
+
+.aHarten {
+    color: red;
+    position:absolute; 
+    left: 4px; 
+    top: -25px;
+}
+
+.aKlaveren{
+    position:absolute; 
+    left:4px;
+    top:-25px;
+}
+
+.adiamond-up-side-down{
+    display: inline-block;
+    margin: 1em;
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+    transform: rotate(180deg);
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:105px;
+    top:170px;
+    color: red;
+}
+
+.space-up-side-down-number{
+    display: inline-block;
+    margin: 1em;
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+    transform: rotate(180deg);
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:105px;
+    top:170px
+}
+
+.heart-up-side-down-number {
+    display: inline-block;
+    margin: 1em;
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+    transform: rotate(180deg);
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:105px;
+    top:170px;
+    color: red;
+}
+
+.clover-up-side-down-number {
+    display: inline-block;
+    margin: 1em;
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+    transform: rotate(180deg);
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:105px;
+    top:170px;
+}
+
+
+
+.whiteCard {
+    position:relative;
+    border-radius: 5%;
+    width: 147px;
+    height: 206px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 3px #555;
+    transition: all .5s;
+}
+
+
+
+img {
+    width: 60px;
+    height: 64px;
+    margin: 70px 40px;
+}
+
+p {
+    font-size: 22px;
+}
+
+
+.diamond-up-side-down{
+    display: inline-block;
+    margin: 1em;
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:113px;
+    top:145px
+
+}
+
+
+
+.space-up-side-down{
+    display: inline-block;
+    margin: 1em;
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:113px;
+    top:145px;
+}
+
+
+
+.heart-up-side-down {
+    display: inline-block;
+    margin: 1em;
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:113px;
+    top:145px;
+}
+
+
+
+.clover-up-side-down {
+    display: inline-block;
+    margin: 1em;
+    transform: scale(-1, 1);
+    transform: scale(1, -1);
+    width: 16px;
+    height: 16px;
+    position:absolute; 
+    left:113px;
+    top:145px;
+}
