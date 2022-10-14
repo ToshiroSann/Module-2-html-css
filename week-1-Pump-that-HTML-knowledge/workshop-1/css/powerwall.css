@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+
+    font-family: myFirstFont;
+
+    src: url(/week-1-Pump-that-HTML-knowledge/workshop-1-elon/font/TESLA.ttf);
+
+    font-weight: bold;
+
+}
+#overlay {
+    position: fixed;
+}
+
+#header{
+    padding: 12px 25px;
+}
+
+#header, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li {
+    padding-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+#powerwall {
+    width: calc 100vw;
+    height: 100vh;
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/Powerwall-first-page.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: myFirstFont;
+    color: aliceblue;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#powerwall h2{
+    font-size: 40px;
+}
+
+#info-page {
+    width: calc 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-color: black;
+    color: white;
+    padding-left: 8%;
+    display: flex;
+}
+
+#info-page img {
+    width: 700px;
+    height: 900px;
+}
+
+#first {
+    display: flex;
+    width: 1000px;
+    height: 300px;
+
+}
