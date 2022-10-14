@@ -4,6 +4,16 @@
     font-family: 'Oswald', sans-serif;
 }
 
+@font-face {
+
+    font-family: myFirstFont;
+
+    src: url(/week-2-Pump-up-that-CSS-knowledge/Eindopdracht/fonts/CoffeetinInitials-YXJ2.ttf);
+
+    font-weight: bold;
+
+}
+
 body {
     background-color: rgb(128, 0, 0);
 }
@@ -14,7 +24,27 @@ h1 {
     font-size: 128px;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    padding-right: 500px;
+    padding-right: 275px;
+    font-family: myFirstFont;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.spread {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-family: myFirstFont;
+}
+
+.stack {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-family: myFirstFont;
 }
 
 section {
@@ -366,23 +396,23 @@ section {
   }
 
 
-.klaverenCard{
+.cloverCard{
     margin: 0px -40px;
 }
 
-.hartenCard{
+.heartCard{
     margin: 0px -40px;
 }
 
-.schoppenCard{
+.spadeCard{
     margin: 0px -40px;
 }
 
-.ruitenCard{
+.diamondCard{
     margin: 0px -40px;
 }
 
-.ruiten{
+.diamond{
     width: 16px;
     height: 16px;
     position:absolute; 
@@ -390,7 +420,7 @@ section {
     top:-44px;
 }
 
-.schoppen{
+.spade{
     width: 16px;
     height: 16px;
     position:absolute; 
@@ -398,7 +428,7 @@ section {
     top:-44px;
 }
 
-.harten {
+.heart {
     width: 16px;
     height: 16px;
     position:absolute; 
@@ -406,7 +436,7 @@ section {
     top:-44px;
 }
 
-.klaveren {
+.clover {
     position:absolute; 
     left:-38px;
     top:-44px;
@@ -414,33 +444,33 @@ section {
     height: 16px;
 }
 
-.aRuiten{
+.diamond-number{
     color: red;
     position:absolute; 
     left: 4px; 
     top: -25px;
 }
 
-.aSchoppen{
+.spade-number{
     position:absolute; 
     left: 4px; 
     top: -25px;
 }
 
-.aHarten {
+.heart-number {
     color: red;
     position:absolute; 
     left: 4px; 
     top: -25px;
 }
 
-.aKlaveren{
+.clover-number{
     position:absolute; 
     left:4px;
     top:-25px;
 }
 
-.adiamond-up-side-down{
+.diamond-up-side-down-number{
     display: inline-block;
     margin: 1em;
     transform: scale(-1, 1);
@@ -454,7 +484,7 @@ section {
     color: red;
 }
 
-.space-up-side-down-number{
+.spade-up-side-down-number{
     display: inline-block;
     margin: 1em;
     transform: scale(-1, 1);
@@ -534,7 +564,7 @@ p {
 
 
 
-.space-up-side-down{
+.spade-up-side-down{
     display: inline-block;
     margin: 1em;
     transform: scale(-1, 1);
