@@ -6,14 +6,10 @@
 
     font-family: myFirstFont;
 
-    src: url(/week-1-Pump-that-HTML-knowledge/workshop-1-elon/font/TESLA.ttf);
+    src: url(/week-1-Pump-that-HTML-knowledge/workshop-1/font/TESLA.ttf);
 
     font-weight: bold;
 
-}
-
-#overlay {
-    position: fixed;
 }
 
 #header{

@@ -6,17 +6,15 @@
 
     font-family: myFirstFont;
 
-    src: url(/week-1-Pump-that-HTML-knowledge/workshop-1-elon/font/TESLA.ttf);
+    src: url(/week-1-Pump-that-HTML-knowledge/workshop-1/font/TESLA.ttf);
 
     font-weight: bold;
 
 }
-#overlay {
-    position: fixed;
-}
 
 #header{
     padding: 12px 25px;
+    font-family: myFirstFont;
 }
 
 #header, ul{
@@ -44,7 +42,6 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    font-family: myFirstFont;
     color: aliceblue;
     list-style-type: none;
     text-decoration: none;

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+
+    font-family: myFirstFont;
+
+    src: url(/week-1-Pump-that-HTML-knowledge/workshop-1/font/TESLA.ttf);
+
+    font-weight: bold;
+
+}
+
+#header{
+    padding: 12px 25px;
+}
+
+#header, ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: myFirstFont;
+}
+
+ul li {
+    padding-right: 20px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+#the-boring-company {
+    width: calc 100vw;
+    height: 100vh;
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/the-boring-company-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#the-boring-company h1 {
+    padding-top: 200px;
+    font-size: 70px;
+}
+
+#the-boring-company h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#first-image {
+    width: calc 100vw;
+    height: 100vh;
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/the-boring-company-tunnels.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-snap-align: start;
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+}
+
+#first-image h1 {
+    padding-top: 25%;
+    font-size: 50px;
+}
+
+#first-image p {
+    font-size: 15px;
+}
+
+#second-image {
+    width: calc 100vw;
+    height: 100vh;
+    background-image: url(/week-1-Pump-that-HTML-knowledge/workshop-1/images/the-boring-company-constructions.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    padding-left: 100px;
+}
+
+#second-image h1 {
+    padding-top: 25%;
+    font-size: 50px;
+}
+
+#second-image p {
+    font-size: 15px;
+}
+
+
