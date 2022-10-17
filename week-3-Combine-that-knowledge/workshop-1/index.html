@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulier</title>
+</head>
+
+<body>
+    <div id="container">
+        <form action="doelbestand.php" method="post">
+            Voornaam: <br>
+            <input type="text" name="vnaam" placeholder="Voornaam" /><br><br>
+            Achternaam: <br>
+            <input type="text" name="anaam" placeholder="Achternaam" /><br><br>
+            Geboortedatum: <br>
+            <input type="text" name="datum" placeholder="jouw geboortedatum" /><br><br>
+
+            <input type="datetime-local" />
+            <input type="Time" />
+            <input type="Week" />
+            <input type="Month" /> <br><br>
+
+            <input id="country" type="text" name="country" size="40" list="countries" placeholder="country" />
+            <datalist id="countries">
+                <option value="Australia">
+                <option value="Canada">
+                <option value="Germany">
+                <option value="France">
+                <option value="United Kingdom">
+                <option value="United States">
+
+
+            </datalist>
+            <br><br>
+            <input type="number" placeholder="number">
+            <br><br>
+            <input type="number" min="5" max="100" step="5" value="10">
+            <br><br>
+            <input type="email" required placeholder="email">
+            <br><br>
+            <input type="file">
+            <br><br>
+            <input type="color">
+            <br><br>
+            <input type="range" min="1" max="10">
+            <br><br>
+            <input type="submit" />
+        </form>
+    </div>
+</body>
+
+</html>
