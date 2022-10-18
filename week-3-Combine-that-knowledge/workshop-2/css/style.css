@@ -29,18 +29,29 @@
     padding-left: 25px;
 }
 
-.gegevens {
-    padding-left: 150px;
+#gegevens {
+    padding-top: 10px;
 }
 
-#info-1 { 
+.titel { 
     color: #285DAB;
     font-family: dobra;
     font-size: 28px;
+    padding-left: 150px;
 }
 
-#info-2 {
+.beschrijving {
     color: #0090E3;
     font-family: open-sans;
-    font-size: 15px;
+    font-size: 18px;
+    padding-left: 150px;
+}
+
+#bewaargegevens {
+    
+}
+
+#footer {
+    width: 100vw;
+    height: 54px;
 }
