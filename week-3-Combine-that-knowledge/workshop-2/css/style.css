@@ -51,7 +51,114 @@
     
 }
 
-#footer {
+#topfooter {
     width: 100vw;
-    height: 54px;
+    height: 250px;
+    background-color: #0090e3;
+    color: white;
+}
+
+#topfooter-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+#call-icon {
+    width: 45px;
+    height: 45px;
+}
+
+#left-top {
+    display: flex;
+    align-items: center;   
+}
+
+#left-top h1{
+    font-family: dobra;
+}
+
+#left-top-text {
+    margin-left: 10px;
+}
+
+#eerste-text {
+    font-family: dobra;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#right-top h1{
+    font-family: dobra;
+}
+
+#first-row {
+    display: flex;
+    padding-top: 10px;
+}
+
+#second-row {
+    display: flex;
+    padding-top: 10px;
+}
+
+#third-row {
+    display: flex;
+    padding-top: 10px;
+}
+
+#fourth-row {
+    display: flex;
+    padding-top: 10px;
+}
+
+#fifth-row {
+    display: flex;
+    padding-top: 10px;
+}
+
+.check {
+    width: 20px;
+    height: 20px;
+}
+
+
+#bottomfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon-1 {
+    width: 32px;
+    height: 32px;
+}
+
+#icon-2 {
+    width: 32px;
+    height: 32px;
+}
+
+#icon-3 {
+    width: 43px;
+    height: 32.7px;
+}
+
+#icon-4 {
+    width: 56px;
+    height: 20.24px;
+}
+
+#icon-5 {
+    width: 57px;
+    height: 21.24px;
+}
+
+#icon-6 {
+    width: 28px;
+    height: 28px;
+}
+
+.icon {
+    padding-right: 13px;
 }
