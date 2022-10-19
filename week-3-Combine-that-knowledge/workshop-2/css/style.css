@@ -66,6 +66,13 @@
     margin-top: 13px;
 }
 
+.vraagteken{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+}
+
 form p {
     width: 324px;
 }
@@ -93,10 +100,6 @@ form p {
 
 #color{
     width: 160px;
-}
-
-#space {
-    padding-bottom: 50px;
 }
 
 #greyBar{
