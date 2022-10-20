@@ -64,7 +64,7 @@ header {
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgb(32,70,254);
 }
 
 header .logo {
@@ -115,13 +115,14 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../images/home-bg-blue.png) no-repeat;
+    background: url(../images/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home .content {
     max-width: 50rem;
+    padding-top: 400px;
 }
 
 .home .content h3 {
@@ -131,7 +132,7 @@ header .fa-bars {
 
 .home .content span {
     font-size: 3.5rem;
-    color: var(--blue);
+    color: #333;
     padding: 1rem 0;
     line-height: 1.5;
 }
