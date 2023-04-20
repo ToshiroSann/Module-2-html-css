@@ -1,3 +1,24 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "webshop";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT details FROM pcs where id = 1";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$name = $row["details"];
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,10 +41,10 @@
         <a href="#" class="logo">ToshiroSann<span>.</span></a>
 
         <nav class="navbar">
-            <a href="/Eindopdracht/index.html#home">home</a>
-            <a href="/Eindopdracht/index.html#about">about</a>
-            <a href="/Eindopdracht/index.html#products">products</a>
-            <a href="/Eindopdracht/index.html#contact">contact</a>
+            <a href="../Eindopdracht/index.html#home">home</a>
+            <a href="../Eindopdracht/index.html#about">about</a>
+            <a href="../Eindopdracht/index.html#products">products</a>
+            <a href="../Eindopdracht/index.html#contact">contact</a>
         </nav>
 
         <div class="icons">
@@ -43,11 +64,7 @@
                 <h1 class="pc-name"> Digital-<span>PC</span> </h1>
                 <div id="info-specs">
                     <h2>Specs:</h2>
-                    <li>RTX 3070 Ti</li>
-                    <li>Ryzen 9 5950X</li>
-                    <li>32GB</li>
-                    <li>4TB SSD</li>
-                    <li>Win 11 Pro</li>
+                    <?php echo $name;?>
                     <h1 class="pc-price"> <span>€</span>1500 </h1>
                 </div>
 
@@ -68,10 +85,10 @@
 
             <div class="box">
                 <h3>quick links</h3>
-                <a href="/Eindopdracht/index.html#home">home</a>
-                <a href="/Eindopdracht/index.html#about">about</a>
-                <a href="/Eindopdracht/index.html#products">products</a>
-                <a href="/Eindopdracht/index.html#contact">contact</a>
+                <a href="../index.html#home">home</a>
+                <a href="../index.html#about">about</a>
+                <a href="../index.html#products">products</a>
+                <a href="../index.html#contact">contact</a>
             </div>
 
             <div class="box">

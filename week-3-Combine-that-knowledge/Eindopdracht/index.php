@@ -1,3 +1,14 @@
+<?php
+include	'connection.php';
+
+$sql = "SELECT name FROM pcs where id = 1";
+$result = $conn->query($sql);
+$row = $result->fetch_assoc();
+$name = $row["name"];
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,10 +32,10 @@
         <a href="#" class="logo">ToshiroSann<span>.</span></a>
 
         <nav class="navbar">
-            <a href="/Eindopdracht/index.html#home">home</a>
-            <a href="/Eindopdracht/index.html#about">about</a>
-            <a href="/Eindopdracht/index.html#products">products</a>
-            <a href="/Eindopdracht/index.html#contact">contact</a>
+            <a href="./index.php#home">home</a>
+            <a href="./index.php#about">about</a>
+            <a href="./index.php#products">products</a>
+            <a href="./index.php#contact">contact</a>
         </nav>
 
         <div class="icons">
@@ -119,7 +130,7 @@
                     </div>
                 </div>
                 <div class="content">
-                    <h3>digital-Pc</h3>
+                    <h3><?php echo $name;?></h3>
                     <div class="price"> $1500 </div>
                 </div>
             </div>
@@ -441,10 +452,10 @@
 
             <div class="box">
                 <h3>quick links</h3>
-                <a href="/Eindopdracht/index.html#home">home</a>
-            <a href="/Eindopdracht/index.html#about">about</a>
-            <a href="/Eindopdracht/index.html#products">products</a>
-            <a href="/Eindopdracht/index.html#contact">contact</a>
+                <a href="./index.php#home">home</a>
+            <a href="./index.php#about">about</a>
+            <a href="./index.php#products">products</a>
+            <a href="./index.php#contact">contact</a>
             </div>
 
             <div class="box">
