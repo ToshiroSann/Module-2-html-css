@@ -11,10 +11,10 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT details FROM pcs where id = 1";
+$sql = "SELECT * FROM pcs where id = 4";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-$name = $row["details"];
+$name = $row["name"];
 
 $conn->close();
 ?>
@@ -41,10 +41,10 @@ $conn->close();
         <a href="#" class="logo">ToshiroSann<span>.</span></a>
 
         <nav class="navbar">
-            <a href="../Eindopdracht/index.html#home">home</a>
-            <a href="../Eindopdracht/index.html#about">about</a>
-            <a href="../Eindopdracht/index.html#products">products</a>
-            <a href="../Eindopdracht/index.html#contact">contact</a>
+            <a href="../index.php#home">home</a>
+            <a href="../index.php#about">about</a>
+            <a href="../index.php#products">products</a>
+            <a href="../index.php#contact">contact</a>
         </nav>
 
         <div class="icons">
@@ -64,7 +64,12 @@ $conn->close();
                 <h1 class="pc-name"> Digital-<span>PC</span> </h1>
                 <div id="info-specs">
                     <h2>Specs:</h2>
-                    <?php echo $name;?>
+                    <ul>
+
+                    
+                    <li><?php echo $name;?></li>
+                    <li>&euro;<?php echo $row["price"]?></li>
+                    </ul>
                     <h1 class="pc-price"> <span>€</span>1500 </h1>
                 </div>
 
@@ -85,10 +90,10 @@ $conn->close();
 
             <div class="box">
                 <h3>quick links</h3>
-                <a href="../index.html#home">home</a>
-                <a href="../index.html#about">about</a>
-                <a href="../index.html#products">products</a>
-                <a href="../index.html#contact">contact</a>
+                <a href="../index.php#home">home</a>
+                <a href="../index.php#about">about</a>
+                <a href="../index.php#products">products</a>
+                <a href="../index.php#contact">contact</a>
             </div>
 
             <div class="box">

@@ -126,7 +126,7 @@ $conn->close();
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="cart-btn">add to cart</a>
-                        <a href="../Eindopdracht/detail-pc/digital-pc.html" class="fas fa-share"></a>
+                        <a href="./detail-pc/digital-pc.php" class="fas fa-share"></a>
                     </div>
                 </div>
                 <div class="content">
