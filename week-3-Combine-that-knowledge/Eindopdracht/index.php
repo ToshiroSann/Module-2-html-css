@@ -1,13 +1,3 @@
-<?php
-include	'connection.php';
-
-$sql = "SELECT name FROM pcs where id = 1";
-$result = $conn->query($sql);
-$row = $result->fetch_assoc();
-$name = $row["name"];
-
-$conn->close();
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -120,306 +110,32 @@ $conn->close();
 
         <div class="box-container">
 
+        <?php
+include	'connection.php';
+
+$sql = "SELECT name, price, id, image FROM pcs ";
+$result = $conn->query($sql);
+while ($row = $result->fetch_assoc()) {
+    ?>
             <div class="box">
                 <div class="image">
-                    <img src="images/img-1.jpg" alt="">
+                    <img src="images/<?php echo $row['image'];?>" alt="">
                     <div class="icons">
                         <a href="#" class="fas fa-heart"></a>
                         <a href="#" class="cart-btn">add to cart</a>
-                        <a href="./detail-pc/digital-pc.php" class="fas fa-share"></a>
+                        <a href="./detail-pc/detail-page.php?id=<?php echo $row["id"];?>" class="fas fa-share"></a>
                     </div>
                 </div>
                 <div class="content">
-                    <h3><?php echo $name;?></h3>
-                    <div class="price"> $1500 </div>
+                    <h3><?php echo $row["name"];?></h3>
+                    <div class="price"> &euro;<?php echo $row["price"]; ?></div>
                 </div>
             </div>
+    <?php
+}
 
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-2.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>NZXT-pc</h3>
-                    <div class="price"> $1100 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-3.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Black-crystal</h3>
-                    <div class="price"> $1700 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-4.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>White-crystal</h3>
-                    <div class="price"> $1800 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-5.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>lian-li-011</h3>
-                    <div class="price"> $2900 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-6.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Dynamic-Snow</h3>
-                    <div class="price"> $1650 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-7.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Dynamic-Black</h3>
-                    <div class="price"> $2000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-8.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Lian-Li-Fishy</h3>
-                    <div class="price"> $3500 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-9.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Lian-Li-Evo</h3>
-                    <div class="price"> $2900 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-10.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>yellow minion</h3>
-                    <div class="price"> $13000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-11.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Cherry Blossom</h3>
-                    <div class="price"> $5000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-12.avif" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Robo</h3>
-                    <div class="price"> $5000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-13.avif" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>alienware</h3>
-                    <div class="price"> $6000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-14.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Green-Lantern</h3>
-                    <div class="price"> $3000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-15.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Chainsaw-Man</h3>
-                    <div class="price"> $7000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-16.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>EVE</h3>
-                    <div class="price"> $5500 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-17.png" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Blue-Lagoon</h3>
-                    <div class="price"> $2000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-18.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Genji</h3>
-                    <div class="price"> $11000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-19.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Darth-Vader</h3>
-                    <div class="price"> $5000 </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="images/img-20.jpg" alt="">
-                    <div class="icons">
-                        <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="cart-btn">add to cart</a>
-                        <a href="#" class="fas fa-share"></a>
-                    </div>
-                </div>
-                <div class="content">
-                    <h3>Chamber</h3>
-                    <div class="price"> $8000 </div>
-                </div>
-            </div>
-
+$conn->close();
+?>
         </div>
 
     </section>

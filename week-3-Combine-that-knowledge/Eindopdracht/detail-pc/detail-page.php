@@ -11,7 +11,8 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM pcs where id = 4";
+$id = $_GET['id'];
+$sql = "SELECT * FROM pcs where id = $id";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 $name = $row["name"];
@@ -28,7 +29,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>digital-pc</title>
+    <title></title>
 </head>
 
 <body>
@@ -61,7 +62,7 @@ $conn->close();
         <div class="row">
 
             <form action="">
-                <h1 class="pc-name"> Digital-<span>PC</span> </h1>
+                <h1 class="pc-name"> <?php echo $name;?> </h1>
                 <div id="info-specs">
                     <h2>Specs:</h2>
                     <ul>
@@ -69,8 +70,13 @@ $conn->close();
                     
                     <li><?php echo $name;?></li>
                     <li>&euro;<?php echo $row["price"]?></li>
+                    <li><?php echo $row["gpu"]?></li>
+                    <li><?php echo $row["cpu"]?></li>
+                    <li><?php echo $row["ram"]?></li>
+                    <li><?php echo $row["storage"]?></li>
+                    <li><?php echo $row["storage_type"]?></li>
                     </ul>
-                    <h1 class="pc-price"> <span>€</span>1500 </h1>
+                    <h1 class="pc-price"> &euro;<?php echo $row["price"]?> </h1>
                 </div>
 
                 <a href="#" class="btn">Add-To-Cart</a>
